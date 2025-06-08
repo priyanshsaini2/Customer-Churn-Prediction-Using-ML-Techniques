@@ -4,7 +4,6 @@
 
 This project aims to build a machine learning model that automatically classifies IMDb movie reviews as **positive** or **negative** based on their text. By applying natural language processing (NLP) techniques and machine learning algorithms, the model helps understand audience sentiment and reception of movies.
 
----
 
 ## What This Project Does
 
@@ -15,7 +14,6 @@ This project aims to build a machine learning model that automatically classifie
 * Tunes model hyperparameters to improve accuracy.
 * Evaluates the model using classification metrics such as accuracy, precision, recall, and F1-score.
 
----
 
 ## Why This Is Important
 
@@ -25,7 +23,6 @@ Understanding sentiment in reviews helps:
 * Content creators improve recommendations.
 * Analysts monitor public opinion efficiently.
 
----
 
 ## Dataset Description
 
@@ -33,7 +30,6 @@ Understanding sentiment in reviews helps:
 * **Sentiment Label:** Binary label indicating if the review is positive or negative.
 * The dataset contains a balanced number of positive and negative reviews with diverse text lengths.
 
----
 
 ## Step-by-Step Process
 
@@ -58,7 +54,6 @@ Understanding sentiment in reviews helps:
 7. **Model Evaluation:**
    Assess models using metrics like accuracy, precision, recall, and F1-score to select the best one.
 
----
 
 ## Tools and Libraries Used
 
@@ -68,7 +63,6 @@ Understanding sentiment in reviews helps:
 * nltk, re (text preprocessing)
 * matplotlib, seaborn (visualization)
 
----
 
 ## How to Use This Project
 
@@ -79,7 +73,6 @@ Understanding sentiment in reviews helps:
 * Evaluate and compare model performance.
 * Use the best model to predict sentiment on new movie reviews.
 
----
 
 ## Conclusion
 
