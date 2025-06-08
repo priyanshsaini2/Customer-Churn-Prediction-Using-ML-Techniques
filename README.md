@@ -72,7 +72,6 @@ By analyzing features like **tenure, internet service type, monthly charges**, a
 * **scikit-learn**
 * **Jupyter Notebook**
 
----
 
 ## Final Deliverables
 
@@ -80,7 +79,6 @@ By analyzing features like **tenure, internet service type, monthly charges**, a
 *  < 5 min video presentation explaining the project end-to-end.
 *  All files zipped and submitted as per project guidelines.
 
----
 
 ##  How to Run
 
@@ -101,7 +99,6 @@ By analyzing features like **tenure, internet service type, monthly charges**, a
    jupyter notebook Customer_Churn_Analysis.ipynb
    ```
 
----
 
 ##  Key Takeaways
 
