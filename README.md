@@ -1,79 +1,115 @@
-# IMDb Movie Review Sentiment Analysis
+# 📉 Customer Churn Prediction Using Machine Learning
 
-## Project Overview
+**Goal:** Predict whether a customer will leave a company using demographic and service-related data — and help businesses reduce churn through proactive retention strategies.
 
-This project aims to build a machine learning model that automatically classifies IMDb movie reviews as **positive** or **negative** based on their text. By applying natural language processing (NLP) techniques and machine learning algorithms, the model helps understand audience sentiment and reception of movies.
+---
 
+## 📌 Overview
 
-## What This Project Does
+Customer churn refers to when customers stop doing business with a company. For subscription-based services like telecom, churn directly impacts revenue. This project uses machine learning to predict customer churn based on features such as demographics, account history, and service usage.
 
-* Loads and explores the IMDb movie review dataset.
-* Cleans and preprocesses raw text data (removes HTML tags, special characters, etc.).
-* Extracts meaningful features from the text for model training.
-* Develops and compares multiple classification algorithms to find the best model.
-* Tunes model hyperparameters to improve accuracy.
-* Evaluates the model using classification metrics such as accuracy, precision, recall, and F1-score.
+---
 
+## 🧠 Problem Statement
 
-## Why This Is Important
+We aim to build a classification model that:
 
-Understanding sentiment in reviews helps:
+* Identifies customers who are likely to churn.
+* Helps the business retain customers by taking early actions.
 
-* Businesses and filmmakers gauge audience reactions.
-* Content creators improve recommendations.
-* Analysts monitor public opinion efficiently.
+By analyzing features like **tenure, internet service type, monthly charges**, and more, we can generate actionable insights for reducing churn.
 
+---
 
-## Dataset Description
+## 📊 Dataset Information
 
-* **Review Text:** The content of the movie review written by users.
-* **Sentiment Label:** Binary label indicating if the review is positive or negative.
-* The dataset contains a balanced number of positive and negative reviews with diverse text lengths.
+* **Dataset name:** `customer_data.csv`
+* **Records:** 7,043 rows, 21 columns
+* **Target Variable:** `Churn` (Yes/No)
 
+---
 
-## Step-by-Step Process
+## ⚙️ Project Workflow
 
-1. **Data Exploration:**
-   Check dataset properties, verify no missing values, and analyze text length variation.
+### 1. **Data Exploration**
 
-2. **Data Cleaning:**
-   Remove unwanted HTML tags, special characters, and noise from the review text.
+* Checked for null values, data types, and distributions.
+* Found 11 missing values in `TotalCharges`.
 
-3. **Text Preprocessing:**
-   Apply techniques like tokenization, lowercasing, stopword removal, and stemming/lemmatization (if used).
+### 2. **Data Preprocessing**
 
-4. **Feature Extraction:**
-   Convert text into numerical features using methods such as TF-IDF or word embeddings.
+* Handled missing values and converted `TotalCharges` to numeric.
+* Applied **Label Encoding** to binary categorical features.
+* Used **One-Hot Encoding** for multi-class categorical features.
+* Scaled numerical features using **StandardScaler**.
 
-5. **Model Development:**
-   Train multiple classification models (e.g., Logistic Regression, Naive Bayes, SVM) on the features.
+### 3. **Modeling**
 
-6. **Model Tuning:**
-   Optimize hyperparameters to improve model performance.
+* Split data using an 80/20 **Train/Test** split.
+* Trained and tested multiple models:
 
-7. **Model Evaluation:**
-   Assess models using metrics like accuracy, precision, recall, and F1-score to select the best one.
+  * Logistic Regression
+  * Random Forest Classifier
+  * Support Vector Machine (SVM)
+  * K-Nearest Neighbors (KNN)
 
+### 4. **Evaluation**
 
-## Tools and Libraries Used
+* Evaluated using:
 
-* Python
-* pandas, numpy (data handling)
-* scikit-learn (modeling, feature extraction, and evaluation)
-* nltk, re (text preprocessing)
-* matplotlib, seaborn (visualization)
-
-
-## How to Use This Project
-
-* Load the IMDb review dataset.
-* Perform cleaning and preprocessing on the review text.
-* Extract features using TF-IDF or other methods.
-* Train classification models on processed data.
-* Evaluate and compare model performance.
-* Use the best model to predict sentiment on new movie reviews.
+  * **Accuracy**
+  * **Precision**
+  * **Recall**
+  * **F1 Score**
+  * **ROC-AUC**
+* Plotted confusion matrices and heatmaps for clarity.
 
 
-## Conclusion
 
-This project showcases the application of natural language processing and machine learning to understand public sentiment in movie reviews. It provides a practical approach to text classification problems and helps users learn how to handle, analyze, and model textual data effectively.
+## 🛠 Tools Used
+
+* **Python**
+* **pandas**, **numpy**, **matplotlib**, **seaborn**
+* **scikit-learn**
+* **Jupyter Notebook**
+
+---
+
+## 📽️ Final Deliverables
+
+* 📓 Jupyter Notebook with EDA, preprocessing, modeling, and evaluation.
+* 🎥 < 5 min video presentation explaining the project end-to-end.
+* 📁 All files zipped and submitted as per project guidelines.
+
+---
+
+## 🚀 How to Run
+
+1. Clone the repo:
+
+   ```bash
+   git clone https://github.com/yourusername/customer-churn-prediction.git
+   cd customer-churn-prediction
+   ```
+2. Install requirements:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run the notebook:
+
+   ```bash
+   jupyter notebook Customer_Churn_Analysis.ipynb
+   ```
+
+---
+
+## 💡 Key Takeaways
+
+* Understanding customer churn is critical for long-term business success.
+* Machine learning can identify high-risk customers with decent accuracy.
+* Preprocessing and feature engineering significantly impact model performance.
+* Random Forest and Logistic Regression performed best in our tests.
+
+
+
