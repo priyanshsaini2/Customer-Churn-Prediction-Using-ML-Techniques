@@ -1,16 +1,15 @@
-# 📉 Customer Churn Prediction Using Machine Learning
+#  Customer Churn Prediction Using Machine Learning
 
 **Goal:** Predict whether a customer will leave a company using demographic and service-related data — and help businesses reduce churn through proactive retention strategies.
 
----
 
-## 📌 Overview
+##  Overview
 
 Customer churn refers to when customers stop doing business with a company. For subscription-based services like telecom, churn directly impacts revenue. This project uses machine learning to predict customer churn based on features such as demographics, account history, and service usage.
 
----
 
-## 🧠 Problem Statement
+
+## Problem Statement
 
 We aim to build a classification model that:
 
@@ -19,17 +18,17 @@ We aim to build a classification model that:
 
 By analyzing features like **tenure, internet service type, monthly charges**, and more, we can generate actionable insights for reducing churn.
 
----
 
-## 📊 Dataset Information
+
+## Dataset Information
 
 * **Dataset name:** `customer_data.csv`
 * **Records:** 7,043 rows, 21 columns
 * **Target Variable:** `Churn` (Yes/No)
 
----
 
-## ⚙️ Project Workflow
+
+##  Project Workflow
 
 ### 1. **Data Exploration**
 
@@ -66,7 +65,7 @@ By analyzing features like **tenure, internet service type, monthly charges**, a
 
 
 
-## 🛠 Tools Used
+## Tools Used
 
 * **Python**
 * **pandas**, **numpy**, **matplotlib**, **seaborn**
@@ -75,15 +74,15 @@ By analyzing features like **tenure, internet service type, monthly charges**, a
 
 ---
 
-## 📽️ Final Deliverables
+## Final Deliverables
 
-* 📓 Jupyter Notebook with EDA, preprocessing, modeling, and evaluation.
-* 🎥 < 5 min video presentation explaining the project end-to-end.
-* 📁 All files zipped and submitted as per project guidelines.
+*  Jupyter Notebook with EDA, preprocessing, modeling, and evaluation.
+*  < 5 min video presentation explaining the project end-to-end.
+*  All files zipped and submitted as per project guidelines.
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 1. Clone the repo:
 
@@ -104,7 +103,7 @@ By analyzing features like **tenure, internet service type, monthly charges**, a
 
 ---
 
-## 💡 Key Takeaways
+##  Key Takeaways
 
 * Understanding customer churn is critical for long-term business success.
 * Machine learning can identify high-risk customers with decent accuracy.
